@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 <header class="cabecalho">
   <div class="container cabecalho-conteudo">
     <a class="logo" href="index.html">Ponto Digno</a>
@@ -29,7 +30,7 @@
   </div>
 </header>
 
-<main>
+<main id="conteudo-principal">
   <section class="hero">
     <div class="container grid-12">
       <div class="hero-copy">
@@ -103,11 +104,11 @@
 </footer>
 
 <div class="modal-backdrop" id="modal-contribuir" aria-hidden="true">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-describedby="modal-descricao">
     <button class="modal-close" id="modal-close" type="button" aria-label="Fechar">×</button>
     <p class="eyebrow">Apoio</p>
     <h2 id="modal-titulo">Formas de contribuição</h2>
-    <p>Você pode participar como voluntário, doador ou parceiro. O cadastro é demonstrativo nesta etapa.</p>
+    <p id="modal-descricao">Você pode participar como voluntário, doador ou parceiro. O cadastro é demonstrativo nesta etapa.</p>
     <div class="badges">
       <span class="badge badge-voluntario">Voluntariado</span>
       <span class="badge badge-destaque">Doações</span>
