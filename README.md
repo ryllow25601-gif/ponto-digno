@@ -56,3 +56,4 @@ Abra `html/index.html` com o Live Server no VS Code.
 A pasta `docs/` foi preparada para publicação como site estático no GitHub Pages.
 
 O formulário é demonstrativo e não envia dados para um servidor.
+Projeto desenvolvido para a Experiência Prática de Desenvolvimento Front-End.
