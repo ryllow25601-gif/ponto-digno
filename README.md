@@ -2,7 +2,7 @@
 
 Projeto acadêmico de Desenvolvimento Front-End para Web.
 
-## Estrutura exigida
+## Estrutura
 
 ```
 ponto-digno/
@@ -17,34 +17,42 @@ ponto-digno/
 │   ├── storage.js
 │   ├── ui.js
 │   ├── formulario.js
-│   ├── templates.js
 │   └── router.js
-└── imagens/
-    ├── 01_doacao_roupas.svg
-    ├── 02_kit_higiene.svg
-    └── 03_estrutura_ponto.svg
+├── imagens/
+└── docs/
+    ├── index.html
+    ├── projetos.html
+    ├── cadastro.html
+    ├── css/style.min.css
+    ├── js/*.min.js
+    └── imagens/*.svg
 ```
 
 ## Requisitos implementados
 
-- HTML5 semântico com `header`, `nav`, `main`, `section`, `article`, `footer` e `address`.
-- `index.html` com identidade, problema/proposta, objetivo, serviços e contato.
-- `projetos.html` com pontos de higiene, roupas/doações, itens de higiene e orientação/encaminhamento.
-- `cadastro.html` com `fieldset` para voluntários e doadores.
-- Validação nativa com `required`, `minlength`, tipos de campo, `pattern`, `maxlength` e seleção obrigatória.
-- Máscaras de CPF, telefone e CEP via JavaScript.
-- `autocomplete` compatível para endereço, usando `address-line1` e `address-level2`.
-- Persistência e restauração de cadastro demonstrativo com `localStorage`.
-- Modal, toast e menu responsivo.
-- Roteador JavaScript incluído para a navegação do projeto.
-- Cinco aplicações explícitas de Flexbox: cabeçalho, menu, cartões da página inicial, projetos sociais e áreas de ações.
-- Sistema visual com 8 cores, 5 tamanhos tipográficos e escala modular de espaçamento em CSS.
-- Imagens organizadas em `imagens/` e textos alternativos descritivos.
-- Responsividade com media queries e suporte a redução de movimento.
-- Linguagem que diferencia proposta/metas de resultados reais, evitando números fictícios de impacto.
+- HTML5 semântico com landmarks e elementos de formulário acessíveis.
+- Validação nativa e máscaras de CPF, telefone e CEP.
+- Persistência demonstrativa de dados básicos com `localStorage`.
+- Modal, toast e menu responsivo com foco visível e navegação por teclado.
+- Estados `aria-invalid` no formulário e link para pular ao conteúdo principal.
+- Cinco aplicações explícitas de Flexbox e Grid de 12 colunas.
+- Responsividade e suporte a redução de movimento.
+- Imagens SVG com textos alternativos.
+- Versão de produção em `docs/` com CSS/JavaScript compactados e carregamento otimizado de imagens.
 
-## Execução
+## GitFlow
 
-Abra `html/index.html` no navegador ou use o Live Server no VS Code.
+- `main`: versão estável.
+- `develop`: integração do desenvolvimento.
+- `feature/*`: novas funcionalidades.
+- `hotfix/*`: correções urgentes.
+
+## Execução local
+
+Abra `html/index.html` com o Live Server no VS Code.
+
+## Publicação
+
+A pasta `docs/` foi preparada para publicação como site estático no GitHub Pages.
 
 O formulário é demonstrativo e não envia dados para um servidor.
