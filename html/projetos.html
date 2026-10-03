@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 <header class="cabecalho">
   <div class="container cabecalho-conteudo">
     <a class="logo" href="index.html">Ponto Digno</a>
@@ -29,7 +30,7 @@
   </div>
 </header>
 
-<main>
+<main id="conteudo-principal">
 <section class="secao">
   <div class="container">
     <p class="eyebrow">Frentes de atuação</p>
@@ -39,15 +40,15 @@
 
     <div class="projetos-grid">
       <article class="card projeto-card" id="higiene">
-        <img src="../imagens/03_estrutura_ponto.svg" alt="Ilustração de espaço coletivo de higiene com chuveiro, pia, bancos e armários.">
+        <img loading="lazy" decoding="async" src="../imagens/03_estrutura_ponto.svg" alt="Ilustração de espaço coletivo de higiene com chuveiro, pia, bancos e armários.">
         <div class="projeto-conteudo"><div class="badges"><span class="badge badge-destaque">Higiene</span><span class="badge">Estrutura</span></div><h2>Pontos de higiene e cuidado</h2><p>Espaços com banho, banheiro, lavatórios e itens básicos de higiene.</p></div>
       </article>
       <article class="card projeto-card" id="doacoes">
-        <img src="../imagens/01_doacao_roupas.svg" alt="Ilustração de caixas com roupas organizadas para doação.">
+        <img loading="lazy" decoding="async" src="../imagens/01_doacao_roupas.svg" alt="Ilustração de caixas com roupas organizadas para doação.">
         <div class="projeto-conteudo"><div class="badges"><span class="badge badge-voluntario">Voluntariado</span><span class="badge">Doações</span></div><h2>Roupas e doações</h2><p>Campanhas para arrecadação, triagem e distribuição de roupas limpas.</p></div>
       </article>
       <article class="card projeto-card" id="itens-higiene">
-        <img src="../imagens/02_kit_higiene.svg" alt="Ilustração de kit com sabonete, escova de dentes e pasta de dentes.">
+        <img loading="lazy" decoding="async" src="../imagens/02_kit_higiene.svg" alt="Ilustração de kit com sabonete, escova de dentes e pasta de dentes.">
         <div class="projeto-conteudo"><div class="badges"><span class="badge">Higiene</span><span class="badge badge-destaque">Arrecadação</span></div><h2>Itens de higiene</h2><p>Arrecadação e disponibilização de produtos básicos de higiene pessoal.</p></div>
       </article>
       <article class="card projeto-card" id="encaminhamento">
@@ -86,10 +87,10 @@
 </footer>
 
 <div class="modal-backdrop" id="modal-contribuir" aria-hidden="true">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-describedby="modal-descricao">
     <button class="modal-close" id="modal-close" type="button" aria-label="Fechar">×</button>
     <p class="eyebrow">Apoio</p><h2 id="modal-titulo">Formas de contribuição</h2>
-    <p>Você pode participar como voluntário, doador ou parceiro. O cadastro é demonstrativo nesta etapa.</p>
+    <p id="modal-descricao">Você pode participar como voluntário, doador ou parceiro. O cadastro é demonstrativo nesta etapa.</p>
     <div class="acoes"><a class="botao" href="cadastro.html">Abrir cadastro</a><button class="botao botao-secundario" type="button" data-toast="Obrigado pelo interesse no Ponto Digno.">Mostrar confirmação</button></div>
   </div>
 </div>
